@@ -149,7 +149,7 @@
                         <ul class="list-inline intro-social-buttons">
                             
                             <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                <a href="https://github.com/tkkr6895/Videogame_DB" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                             </li>
                              <hr class="intro-divider">
 
@@ -173,23 +173,9 @@
         <!-- /.container -->
 
     </div>
-    <!-- /.intro-header -->
-
-    <!-- Page Content -->
-
-	
-    <!-- /.content-section-b -->
-
-   
-        <!-- /.container -->
-
+    
     </div>
-    <!-- /.content-section-a -->
-
-	
-    <!-- /.banner -->
-
-    <!-- Footer -->
+    
     <footer>
         <div class="container">
             <div class="row">
