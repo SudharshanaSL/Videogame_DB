@@ -19,6 +19,11 @@
         remote:'search1.php?key=%QUERY',
         limit : 10
     });
+    $('input.typeahead2').typeahead({
+        name: 'typeahead2',
+        remote:'search2.php?key=%QUERY',
+        limit : 10
+    });
 });
 </script>
 
@@ -52,6 +57,7 @@
     font-family: sans-serif;
     position: relative;
     margin: 50px;
+    color: #000000;
 }
 .typeahead, .tt-query, .tt-hint {
     border: 2px solid #CCCCCC;
@@ -62,6 +68,7 @@
     outline: medium none;
     padding: 8px 12px;
     width: 396px;
+    color:#000000;
 }
 .typeahead {
     background-color: #FFFFFF;
@@ -88,6 +95,7 @@
     font-size: 24px;
     line-height: 24px;
     padding: 3px 20px;
+    color: #C0C0C0;
 }
 .tt-suggestion.tt-is-under-cursor {
     background-color: #0097CF;
@@ -153,14 +161,19 @@
                             </li>
                              <hr class="intro-divider">
 
-    <p>Search By Name</p>
+    <p>Search By Video Game Name</p>
     <form method = "post" action="test.php?go" id="searchform">
-        <input type="text" name="typeahead" class="typeahead tt-query"   autocomplete="off" spellcheck="false" placeholder="Type in the name here">
+        <input type="text" name="typeahead" class="typeahead tt-query"   autocomplete="off" spellcheck="false" placeholder="Type in the Video game name here">
         <input type="submit" name="submit"   value="Submit">
         </form>
-        <p>Search By Genre</p>
+    <p>Search By Genre</p>
     <form method = "post" action="test1.php?go" id="searchform1">
         <input type="text" name="typeahead1" class="typeahead1 tt-query"   autocomplete="off" spellcheck="false" placeholder="Type in the genre here">
+        <input type="submit" name="submit"   value="Submit">
+        </form>
+    <p>Search By Studio</p>
+    <form method = "post" action="gamesbystudio.php?go" id="searchform">
+        <input type="text" name="typeahead2" class="typeahead2 tt-query"   autocomplete="off" spellcheck="false" placeholder="Type in the Studio name here">
         <input type="submit" name="submit"   value="Submit">
         </form>
    
