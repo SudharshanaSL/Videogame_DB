@@ -24,6 +24,21 @@
         remote:'search2.php?key=%QUERY',
         limit : 10
     });
+    $('input.typeahead3').typeahead({
+        name: 'typeahead3',
+        remote:'gamesbyseries.php?key=%QUERY',
+        limit : 10
+    });
+    $('input.typeahead4').typeahead({
+        name: 'typeahead4',
+        remote:'gamesbyplatform.php?key=%QUERY',
+        limit : 10
+    });
+    $('input.typeahead5').typeahead({
+        name: 'typeahead5',
+        remote:'GRbyGAME.php?key=%QUERY',
+        limit : 10
+    });
 });
 </script>
 
@@ -182,7 +197,21 @@ border-radius: 5px;
         <input type="text" name="typeahead2" class="typeahead2 tt-query"   autocomplete="off" spellcheck="false" placeholder="Type in the Studio name here">
         <input type="submit" name="submit"   value="Submit">
         </form>
-   
+    <p >Search By Series</p>
+    <form method = "post" action="gamesbyseries.php?go" id="searchform">
+        <input type="text" name="typeahead3" class="typeahead3 tt-query"   autocomplete="off" spellcheck="false" placeholder="Type in the Series name here">
+        <input type="submit" name="submit"   value="Submit">
+        </form>
+    <p >Search for Games by Platform</p>
+    <form method = "post" action="gamesbyplatform.php?go" id="searchform">
+        <input type="text" name="typeahead4" class="typeahead4 tt-query"   autocomplete="off" spellcheck="false" placeholder="Type in the Platform name here">
+        <input type="submit" name="submit"   value="Submit">
+        </form>
+    <p >Search for Gross Revenue of a game by GAME NAME</p>
+    <form method = "post" action="GRbyGAME.php?go" id="searchform">
+        <input type="text" name="typeahead5" class="typeahead4 tt-query"   autocomplete="off" spellcheck="false" placeholder="Type in the game name here">
+        <input type="submit" name="submit"   value="Submit">
+        </form>
                         </ul>
                     </div>
                 </div>
